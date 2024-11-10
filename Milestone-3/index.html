@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder By Samar Abbas</h1>
+    <form id="ResumeForm">
+        <fieldset>
+            <legend>Personal Information </legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address" required>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education: </label>
+            <textarea name="education" id="education" rows="5"></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience">Experience: </label>
+            <textarea name="experience" id="experience" rows="5"></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skills: </label>
+            <textarea name="skills" id="skills" rows="5"></textarea>
+        </fieldset>
+        <button type="submit">Generate Resume Below</button>
+    </form>
+
+     <div id="resumeOutput">
+        <!--Resume will be generative-->
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
